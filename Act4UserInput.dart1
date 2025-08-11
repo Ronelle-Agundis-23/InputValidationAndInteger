@@ -1,0 +1,30 @@
+import 'dart:io';
+
+
+void main(){
+  User Registration
+  print("=User Registration=");
+  print("Enter your First Name: ");
+  String? fname =stdin.readLineSync();
+
+  print("Enter your Last name: ");
+  String? lname =stdin.readLineSync();
+  
+  print("Enter your Email: ");
+  String? email =stdin.readLineSync();
+
+  Summary
+  print("=Summary=");
+  print("Your Full Name is ${fname} ${lname}");
+  print("Your Email is ${email}");
+
+  validation for non-null
+  if (fname != null && fname.trim().isNotEmpty && lname != null 
+     && lname.trim().isNotEmpty && email !=null && email.trim().isNotEmpty) {
+     print("Registration Success");
+  } else {
+      print("Please provide all the requirements");
+  }
+}
+
+
